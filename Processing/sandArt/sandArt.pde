@@ -4,7 +4,7 @@ Folds f;
 int[] folds = new int[4];
   
 void setup() {
-  size(300, 300);
+  size(300, 500);
   colorMode(RGB,255);
   smooth();
   noStroke();
@@ -47,7 +47,7 @@ String constructName() {
 }
  
 void draw() {
- 
+  translate(-100, 0);
   if(go) {
     for(int f = 0; f < 3; f++) {
       for(float i=-3.0;i<=3.0;i+=step)
