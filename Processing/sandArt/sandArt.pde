@@ -1,12 +1,10 @@
-// click mouse to change drawing
-
 float step ;
 Folds f;
  
 int[] folds = new int[4];
   
 void setup() {
-  size(500, 500);
+  size(400, 400);
   colorMode(RGB,255);
   smooth();
   noStroke();
