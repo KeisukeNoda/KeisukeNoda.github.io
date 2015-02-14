@@ -4,7 +4,7 @@ Folds f;
 int[] folds = new int[4];
   
 void setup() {
-  size(300, 500);
+  size(300, 480);
   colorMode(RGB,255);
   smooth();
   noStroke();
