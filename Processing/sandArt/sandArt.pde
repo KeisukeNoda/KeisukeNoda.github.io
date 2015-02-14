@@ -63,8 +63,6 @@ void draw() {
             fill(100+randomGaussian()*20,20);
             ellipse(i,j,1.0+0.4 * randomGaussian(),1.0+0.4*randomGaussian());
      }
-     fill(20,100);
-     text(constructName(),1,1);
     }
   }
 }
