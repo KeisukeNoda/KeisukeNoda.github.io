@@ -1,4 +1,4 @@
-int num=40, dir=-1;
+int num=20, dir=-1;
 myArc[] arcs = new myArc[num];
 float theta, start, maxsz=22, x, y;
 
