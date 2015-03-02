@@ -11,7 +11,7 @@ color[] f3 = {
 }; 
 
 void setup() {
-  size(700, 700);
+  size(500, 500);
   colorMode(HSB, 255, 100, 100);
   strokeCap(SQUARE);
   oX = width/2;
@@ -21,7 +21,7 @@ void setup() {
 }
 
 void draw() {
-  background(#ffffff);
+  background(223);
 
   for (int i=0; i<num; i++) {
 
