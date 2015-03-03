@@ -1,4 +1,4 @@
-import processing.opengl.*
+import processing.opengl.*;
 
 int cubeSize=34;
 float noiseOffsetSpeed=.02;
