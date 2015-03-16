@@ -1,4 +1,4 @@
-int fc, num = 1500;
+int fc, num = 1800;
 ArrayList ballCollection; 
 boolean save = false;
 float scal, theta;
@@ -7,8 +7,8 @@ PFont font;
 String l = "YOSHI"; 
 
 void setup() {
- background(214,212,218);
-  size(545, 160);
+ background(183, 36, 92);
+  size(480, 135);
   letter = createGraphics(width, height);
   font = loadFont("Arial-Black-250.vlw");
   ballCollection = new ArrayList();
@@ -17,7 +17,7 @@ void setup() {
 }
 
 void draw() {
-  background(214,212,218);
+  background(183, 36, 92);
 
   for (int i=0; i<ballCollection.size (); i++) {
     Ball mb = (Ball) ballCollection.get(i);
@@ -51,7 +51,7 @@ void createStuff() {
   letter.background(255);
   letter.fill(0);
   letter.textFont(font, 150);
-  letter.text(l, 10, 130);
+  letter.text(l, 5, 125);
   letter.endDraw();
   letter.loadPixels();
 
@@ -107,7 +107,7 @@ class Ball {
       float distance = loc.dist(other.loc);
       if (distance >0 && distance < d) {
         a = map(countC,0,10,10,255);
-        stroke(183, 36, 92, a);
+        stroke(255, a);
         line(loc.x, loc.y, other.loc.x, other.loc.y);
         connection[i] = true;
       } 
@@ -122,7 +122,7 @@ class Ball {
 
   void display() {
     noStroke();
-    fill(183, 36, 92, 200);
+    fill(255, 200);
     ellipse(loc.x, loc.y, sz, sz);
   }
 }
