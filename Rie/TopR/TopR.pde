@@ -8,7 +8,7 @@ String l = "R";
 
 void setup() {
   background(183, 36, 92);
-  size(200, 200);
+  size(180, 180);
   letter = createGraphics(width, height);
   font = loadFont("Arial-Black-250.vlw");
   ballCollection = new ArrayList();
@@ -45,8 +45,8 @@ void createStuff() {
   letter.noStroke();
   letter.background(255);
   letter.fill(0);
-  letter.textFont(font, 240);
-  letter.text(l, 5, 185);
+  letter.textFont(font, 230);
+  letter.text(l, 0, 170);
   letter.endDraw();
   letter.loadPixels();
 
