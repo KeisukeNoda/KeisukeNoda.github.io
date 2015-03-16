@@ -31,11 +31,6 @@ void draw() {
   }
 }
 
-void keyPressed() {
-  if (key != CODED) l = str(key);
-  createStuff();
-}
-
 void mouseReleased() {
   //createStuff();
   //fc = frameCount;
