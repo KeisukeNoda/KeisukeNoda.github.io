@@ -45,8 +45,8 @@ void createStuff() {
   letter.noStroke();
   letter.background(255);
   letter.fill(0);
-  letter.textFont(font, 230);
-  letter.text(l, 0, 170);
+  letter.textFont(font, 240);
+  letter.text(l, 0, 180);
   letter.endDraw();
   letter.loadPixels();
 
@@ -57,7 +57,7 @@ void createStuff() {
     int c = letter.pixels[x+y*width];
     if (brightness(c)<255) {
       PVector org = new PVector(x, y);
-      float radius = random(2, 5);
+      float radius = random(5, 10);
       PVector loc = new PVector(org.x+radius, org.y);
       float offSet = random(TWO_PI);
       int dir = 3;
