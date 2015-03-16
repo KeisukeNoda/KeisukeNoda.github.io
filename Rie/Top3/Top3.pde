@@ -7,7 +7,7 @@ PFont font;
 String l = "ZAWA"; 
 
 void setup() {
-  background(225, 225, 227);
+  background(183, 36, 92);
   size(440, 140);
   letter = createGraphics(width, height);
   font = loadFont("Arial-Black-250.vlw");
@@ -17,7 +17,7 @@ void setup() {
 }
 
 void draw() {
-  background(225, 225, 227);
+  background(183, 36, 92);
 
   for (int i=0; i<ballCollection.size (); i++) {
     Ball mb = (Ball) ballCollection.get(i);
@@ -107,7 +107,7 @@ class Ball {
       float distance = loc.dist(other.loc);
       if (distance >0 && distance < d) {
         a = map(countC,0,10,10,255);
-        stroke(183, 36, 92, a);
+        stroke(255, a);
         line(loc.x, loc.y, other.loc.x, other.loc.y);
         connection[i] = true;
       } 
@@ -122,7 +122,7 @@ class Ball {
 
   void display() {
     noStroke();
-    fill(183, 36, 92, 200);
+    fill(255, 200);
     ellipse(loc.x, loc.y, sz, sz);
   }
 }
