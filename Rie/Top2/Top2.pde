@@ -7,7 +7,7 @@ PFont font;
 String l = "YOSHI"; 
 
 void setup() {
- background(255);
+ background(225, 225, 227);
   size(480, 140);
   letter = createGraphics(width, height);
   font = loadFont("Arial-Black-250.vlw");
@@ -17,7 +17,7 @@ void setup() {
 }
 
 void draw() {
-  background(255);
+  background(225, 225, 227);
 
   for (int i=0; i<ballCollection.size (); i++) {
     Ball mb = (Ball) ballCollection.get(i);
