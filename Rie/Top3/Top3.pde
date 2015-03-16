@@ -8,7 +8,7 @@ String l = "ZAWA";
 
 void setup() {
   background(183, 36, 92);
-  size(440, 140);
+  size(470, 140);
   letter = createGraphics(width, height);
   font = loadFont("Arial-Black-250.vlw");
   ballCollection = new ArrayList();

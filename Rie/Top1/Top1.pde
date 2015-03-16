@@ -8,7 +8,7 @@ String l = "RIE";
 
 void setup() {
   background(183, 36, 92);
-  size(260, 140);
+  size(290, 140);
   letter = createGraphics(width, height);
   font = loadFont("Arial-Black-250.vlw");
   ballCollection = new ArrayList();
