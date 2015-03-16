@@ -7,7 +7,7 @@ void setup() {
 
 void draw() {
   randomSeed(5656);
-  background(#E7FDFF);
+  background(#F0F8F8);
   noStroke();
   translate(width/2, height/2);
   for (int i=0; i<num; i++) {
