@@ -1,4 +1,4 @@
-int fc, num = 900;
+int fc, num = 500;
 ArrayList ballCollection; 
 boolean save = false;
 float scal, theta;
