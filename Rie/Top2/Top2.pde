@@ -8,7 +8,7 @@ String l = "YOSHI";
 
 void setup() {
  background(183, 36, 92);
-  size(480, 145);
+  size(480, 140);
   letter = createGraphics(width, height);
   font = loadFont("Arial-Black-250.vlw");
   ballCollection = new ArrayList();
