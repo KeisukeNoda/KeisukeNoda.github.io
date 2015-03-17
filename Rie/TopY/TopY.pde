@@ -60,7 +60,7 @@ void createStuff() {
       float radius = random(5, 10);
       PVector loc = new PVector(org.x+radius, org.y);
       float offSet = random(TWO_PI);
-      int dir = 5;
+      int dir = 3;
       float r = random(1);
       if (r>.5) dir =-1;
       Ball myBall = new Ball(org, loc, radius, dir, offSet);
