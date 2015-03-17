@@ -1,8 +1,8 @@
-int num=15, movers=3, d=100, d2=60, frames=300;
+int num=25, movers=5, d=120, d2=60, frames=300;
 float angle, theta;
 
 void setup() {
-  size(260, 220);
+  size(260, 260);
   //smooth(5);
   stroke(#F0F8F8,180);
 }
