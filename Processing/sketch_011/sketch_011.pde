@@ -33,7 +33,7 @@ Walker w;
 float sz;
 
 void setup() {
-  size(600, 600);
+  size(900, 600);
   w = new Walker();
   background(#fffdf7);
   colorMode(HSB, 100);
