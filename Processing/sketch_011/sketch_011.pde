@@ -1,5 +1,3 @@
-/* OpenProcessing Tweak of *@*http://www.openprocessing.org/sketch/103511*@* */
-/* !do not delete the line above, required for linking your tweak if you upload again */
 class Walker {
   float x, y;
   float a = 0.0;
