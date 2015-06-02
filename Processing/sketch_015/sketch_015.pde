@@ -1,20 +1,20 @@
 ArrayList<Vehicle> vehicles;
 int[] list;
 PFont font;
-String typedKey = "10th";
+String typedKey = "10";
 
 void setup() {
-  size(1100,600);
+  size(350,350);
   frameRate(30);
   stroke(0,128);
   strokeWeight(2);
   vehicles = new ArrayList<Vehicle>();
   
-  font = createFont("FreeSansBold.ttf", 420);
+  font = createFont("FreeSansBold.ttf", 280);
   textFont(font);
   fill(0);
   textAlign(CENTER,CENTER);
-  text(typedKey, 500, height/2-50);
+  text(typedKey, width/2, height/2-50);
   list = new int[width*height];
   loadPixels();
   for(int y = 0; y<=height-1; y++){
@@ -23,8 +23,8 @@ void setup() {
       if(red(pb)<5){  list[y*width+x]=0;  }
       else {  list[y*width+x]=1;  }}}
   updatePixels();
-  for (int x=100; x<width-100; x++){
-    for (int y=100; y<height-100; y++){
+  for (int x=10; x<width-10; x++){
+    for (int y=10; y<height-10; y++){
       if (list[int(y)*width+int(x)]==0 && random(10)<0.19){
         vehicles.add(new Vehicle(x,y));
       }}}
