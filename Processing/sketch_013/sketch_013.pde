@@ -1,4 +1,4 @@
-int num = 8000, frames=80;
+int num = 5000, frames=80;
 float theta;
 
 void setup() {
