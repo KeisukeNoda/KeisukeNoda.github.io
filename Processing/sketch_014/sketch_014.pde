@@ -4,7 +4,7 @@ PFont font;
 String typedKey = "10th";
 
 void setup() {
-  size(1000,600);
+  size(1100,600);
   frameRate(30);
   stroke(0,128);
   strokeWeight(2);
@@ -14,7 +14,7 @@ void setup() {
   textFont(font);
   fill(0);
   textAlign(CENTER,CENTER);
-  text(typedKey, width/2, height/2-50);
+  text(typedKey, 500, height/2-50);
   list = new int[width*height];
   loadPixels();
   for(int y = 0; y<=height-1; y++){
