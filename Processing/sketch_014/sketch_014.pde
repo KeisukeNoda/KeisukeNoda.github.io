@@ -1,5 +1,10 @@
+ArrayList<Vehicle> vehicles;
+int[] list;
+PFont font;
+String typedKey = "10th";
+
 void setup() {
-  size(600,800);
+  size(1000,600);
   frameRate(30);
   stroke(0,128);
   strokeWeight(2);
@@ -24,11 +29,11 @@ void setup() {
         vehicles.add(new Vehicle(x,y));
       }}}
   noFill();
-  background(#FFFAF5);
+  background(#fffdf7);
 }
 
 void draw() {
-  background(#FFFAF5);
+  background(#fffdf7);
   for (Vehicle v : vehicles) {
     v.applyBehaviors(vehicles);
     v.update();
