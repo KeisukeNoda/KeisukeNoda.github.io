@@ -111,6 +111,7 @@ window.onload = function()
                     {
                         newh = 200;
                         neww = newh/rel;
+                        throw "OK!";
                     }
                 }
 
