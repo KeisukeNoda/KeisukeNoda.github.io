@@ -9,7 +9,7 @@ body {
 p {
 	color: #56ECFC;
 }
-			
+
 #overlay {
 	position: absolute;
 	top: 0px;
@@ -78,7 +78,7 @@ p {
 	margin-right : 100px;
 	max-width: 400px;
 }
-			
+
 #content4 {
 	position: absolute;
 	background-color: rgba(0,0,0,.3);
@@ -88,8 +88,19 @@ p {
 	max-width: 500px;
 }
 
+#LoadImage {
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	-o-transform : scaleX(-1);
+	-webkit-transform : scaleX(-1);
+	transform : scaleX(-1);
+	-ms-filter : fliph; /*IE*/
+	filter : fliph; /*IE*/
+}
+
 h3 {
-	color: #56ECFC; 
+	color: #56ECFC;
 }
 
 .loadTracking {
@@ -180,13 +191,13 @@ h3 {
     from { width: 0; }
 }
 
-@-webkit-keyframes blinker {  
+@-webkit-keyframes blinker {
     0% { opacity: 1.0; }
     50% { opacity: 0.5; }
     100% { opacity: 1.0; }
 }
 
-@keyframes blinker {  
+@keyframes blinker {
     0% { opacity: 1.0; }
     50% { opacity: 0.5; }
     100% { opacity: 1.0; }
