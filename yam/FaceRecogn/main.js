@@ -125,7 +125,7 @@ window.onload = function()
             // Display message if the image was sucessfuly loaded
             imgLoaded = true;
             if(imgLoaded) { document.getElementById('positions').innerHTML = "Image Loaded"; }
-            //imgAgent.src = 'http://www.corsproxy.com/' + url.substr(url.indexOf('//') + 2);
+            imgAgent.src = 'http://www.corsproxy.com/' + url.substr(url.indexOf('//') + 2);
         };
 
         // Start the tracker
