@@ -121,11 +121,10 @@ window.onload = function()
                 // Draw image we just load
                 cc2context.clearRect(0,0, 320,240);
                 cc2context.drawImage(imgAgent,0, 0, neww, newh);
-                imgLoaded = true;
             };
             // Display message if the image was sucessfuly loaded
+            imgLoaded = true;
             if(imgLoaded) { document.getElementById('positions').innerHTML = "Image Loaded"; }
-            else document.getElementById('positions').innerHTML = "Error Loaded";
             imgAgent.src = 'http://www.corsproxy.com/' + url.substr(url.indexOf('//') + 2);
         };
 
