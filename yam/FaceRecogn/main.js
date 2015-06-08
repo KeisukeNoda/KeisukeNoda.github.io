@@ -7,10 +7,10 @@
 'use strict';
 
 // Boolean expression used to control some features in the application
-var vidPause = false,
-    vidStart = false,
+var vidPause   = false,
+    vidStart   = false,
     trackStart = false,
-    imgLoaded = false;
+    imgLoaded  = false;
 
 
 // When the window is ready it will run the canvas and start the face detection
@@ -125,7 +125,7 @@ window.onload = function()
             // Display message if the image was sucessfuly loaded
             imgLoaded = true;
             if(imgLoaded) { document.getElementById('positions').innerHTML = "Image Loaded"; }
-            imgAgent.src = 'http://www.corsproxy.com/' + url.substr(url.indexOf('//') + 2);
+            //imgAgent.src = 'http://www.corsproxy.com/' + url.substr(url.indexOf('//') + 2);
         };
 
         // Start the tracker
