@@ -257,7 +257,7 @@ window.onload = function()
         }
         else
         {
-            document.getElementById('positions').innerHTML = "Tracking....";
+            document.getElementById('positions').innerHTML = "Tracking....omg";
         }
     }
 
