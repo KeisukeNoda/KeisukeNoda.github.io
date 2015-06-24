@@ -18,7 +18,7 @@ void draw() {
     float d =  random(s-5, height*.45);
     float x = map(sin(theta+random(TWO_PI)), -1, 1, s, d);
     float sz = random(2, 3);
-    fill(#B24C63, 100);
+    fill(#79B791, 100);
     ellipse(x, 0, sz, sz);
     popMatrix();
   }
