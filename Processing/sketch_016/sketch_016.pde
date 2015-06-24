@@ -15,7 +15,7 @@ float count = 0;
 
 void setup()
 {
-  size(700, 700, P3D);
+  size(600, 600, P3D);
   background(#fffdf7);
   strokeWeight(2);
   generateColors();
@@ -27,7 +27,7 @@ void draw()
   fill(120, 10);
   noStroke();
 
-  translate(700/2, 700/2);
+  translate(600/2, 600/2);
   float thetaD = map(mouseX, 0, width, -.05, .05);
   float theta = random(TWO_PI / NB);
 
