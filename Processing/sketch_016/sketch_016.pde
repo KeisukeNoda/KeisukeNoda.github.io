@@ -15,8 +15,8 @@ float count = 0;
 
 void setup()
 {
-  size(500, 500, P3D);
-  background(50);
+  size(700, 700, P3D);
+  background(#fffdf7);
   strokeWeight(2);
   generateColors();
 }
@@ -27,7 +27,7 @@ void draw()
   fill(120, 10);
   noStroke();
 
-  translate(500/2, 500/2);
+  translate(700/2, 700/2);
   float thetaD = map(mouseX, 0, width, -.05, .05);
   float theta = random(TWO_PI / NB);
 
@@ -81,7 +81,7 @@ void generateColors()
 
 void mousePressed()
 {
-  background(50);
+  background(#fffdf7);
   NB = (int)map(mouseX, 0, width, 2, NB_MAX);
   prevPoint1 = new PVector(0, 0);
   prevPoint2 = new PVector(0, 0);
