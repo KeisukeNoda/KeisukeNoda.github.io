@@ -15,7 +15,7 @@ float count = 0;
 
 void setup()
 {
-  size(600, 600, P2D);
+  size(400, 400, P2D);
   background(#fffdf7);
   strokeWeight(2);
   generateColors();
@@ -43,12 +43,12 @@ void draw()
 
   float tmpX = prevPoint1.x + radius * cos(angle);
   float tmpY = prevPoint1.y + radius * sin(angle);
-  
+
   //adding the mouse rotation
   float x = tmpX * cos(thetaD) - tmpY * sin(thetaD);
   float y = tmpY * cos(thetaD) + tmpX * sin(thetaD);
-  
-  
+
+
   if (x * x + y * y > RADIUS * RADIUS)
   {
     x = RADIUS * cos(atan2(prevPoint1.y, prevPoint1.x));
@@ -56,7 +56,7 @@ void draw()
   }
 
   for (int i = 0; i < NB; i++)
-  {    
+  {
     rotate(TWO_PI / NB);
     //    point(x, y);
     //    point(x, -y);
