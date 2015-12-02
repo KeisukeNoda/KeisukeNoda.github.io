@@ -27,7 +27,7 @@ void draw()
   fill(120, 10);
   noStroke();
 
-  translate(600/2, 600/2);
+  translate(width/2, height/2);
   float thetaD = map(mouseX, 0, width, -.05, .05);
   float theta = random(TWO_PI / NB);
 
