@@ -2,7 +2,7 @@
 /* !do not delete the line above, required for linking your tweak if you upload again */
 final int NB_MAX = 16;
 int NB = (int)random(2, NB_MAX);
-final int RADIUS = 220;
+final int RADIUS = 180;
 PVector prevPoint1 = new PVector(0, 0);
 PVector prevPoint2 = new PVector(0, 0);
 float R;
@@ -15,8 +15,8 @@ float count = 0;
 
 void setup()
 {
-  size(400, 400, P2D);
-  background(414141);
+  size(380, 380, P2D);
+  background(#fffdf7);
   strokeWeight(2);
   generateColors();
 }
