@@ -15,7 +15,7 @@ float count = 0;
 
 void setup()
 {
-  size(320, 360, P2D);
+  size(300, 300, P2D);
   background(#414141);
   strokeWeight(2);
   generateColors();
