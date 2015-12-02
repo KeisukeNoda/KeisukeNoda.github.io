@@ -15,7 +15,7 @@ float count = 0;
 
 void setup()
 {
-  size(360, 360, P2D);
+  size(320, 360, P2D);
   background(#414141);
   strokeWeight(2);
   generateColors();
@@ -81,7 +81,7 @@ void generateColors()
 
 void mousePressed()
 {
-  background(#fffdf7);
+  background(#414141);
   NB = (int)map(mouseX, 0, width, 2, NB_MAX);
   prevPoint1 = new PVector(0, 0);
   prevPoint2 = new PVector(0, 0);
